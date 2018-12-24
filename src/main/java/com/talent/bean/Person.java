@@ -15,6 +15,11 @@ import java.util.Map;
  * @Description: TODO
  * @date 2018/12/24下午2:58
  */
+
+/**
+ * @ConfigurationProperties: 告诉Spring Boot，将本类中所有属性和配置文件中的相关配置进行绑定
+ *      必须和@Component结合使用
+ */
 @Data
 @Component
 @ConfigurationProperties(prefix = "person")
